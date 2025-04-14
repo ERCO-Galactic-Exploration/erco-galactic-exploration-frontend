@@ -4,16 +4,16 @@ import { EMPTY_NATIONALITY, INationality } from "./Nationalities"
 export interface IAstronaut {
     id_astronaut: number,
     name: string,
-    id_specialty: IAstronautSpecialty,
+    specialty: IAstronautSpecialty,
     experience: number,
-    id_nationality: INationality
+    nationality: INationality
 }
 
 export const EMPTY_ASTRONAUT: IAstronaut = {
     id_astronaut: 0,
     name: '',
-    id_specialty: EMPTY_ASTRONAUT_SPECIALTY,
+    specialty: EMPTY_ASTRONAUT_SPECIALTY,
     experience: 0,
-    id_nationality: EMPTY_NATIONALITY
+    nationality: EMPTY_NATIONALITY
 }
 
